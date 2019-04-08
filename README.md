@@ -14,11 +14,9 @@ During this _unbonding period_, the holder does not receive any rewards.
 
 Alice has TokenA.
 
-Bob has LPT bonded to a node in Livepeer's network.
+Bob has LPT bonded to a node in Livepeer's network. Bob also has TokenB.
 
-Bob also has TokenB.
-
-(TokenA and TokenB can be the same).
+TokenA and TokenB can be identical.
 
 ## Objective
 
@@ -50,7 +48,9 @@ Alice would like to exchange `x` TokenA for `y` LPT.
 
 2. Bob deposits `z` TokenB.
 
-3. Alice withdraws `x` TokenA _after_ time `t`, and receives `z` TokenB
+3. Time `t` passes.
+
+4. Alice withdraws `x` TokenA, and receives `z` TokenB
 
 ### Alternative Scenario 2
 
