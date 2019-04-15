@@ -24,22 +24,17 @@ Alice would like to exchange `x` TokenA for `y` LPT.
 
 ## Use Cases
 
-### Main Success Scenario
+### Scenario 1
 
 1. Alice deposits `x` TokenA into the contract, specifying
 
 * `y` = the amount of LPT to be received in exchange for `x` TokenA
 * `z` = the amount of TokenB to be provided as security, and
-* `t` = the time by which the LPT must be delivered.
+* `t` = the time when the offer expires
 
-2. Bob deposits `z` TokenB.
-_Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
+2. Alice withdraws `x` TokenA.
 
-3. Bob deposits `y` LPT _before_ time `t`, and receives `x` TokenA and `z` TokenB.
-
-4. Alice withdraws `y` LPT.
-
-### Alternative Scenario 1
+### Scenario 2
 
 1. Alice deposits `x` TokenA into the contract, specifying
 
@@ -54,12 +49,17 @@ _Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
 
 4. Alice withdraws `x` TokenA, and receives `z` TokenB
 
-### Alternative Scenario 2
+### Scenario 3 - Main Success Scenario
 
 1. Alice deposits `x` TokenA into the contract, specifying
 
 * `y` = the amount of LPT to be received in exchange for `x` TokenA
 * `z` = the amount of TokenB to be provided as security, and
-* `t` = the time when the offer expires
+* `t` = the time by which the LPT must be delivered.
 
-2. Alice withdraws `x` TokenA.
+2. Bob deposits `z` TokenB.
+_Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
+
+3. Bob deposits `y` LPT _before_ time `t`, and receives `x` TokenA and `z` TokenB.
+
+4. Alice withdraws `y` LPT.
