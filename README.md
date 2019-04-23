@@ -18,6 +18,8 @@ Bob has LPT, bonded to a node in Livepeer's network. Bob also has TokenB.
 
 TokenA and TokenB can be identical.
 
+Either of TokenA or TokenB can be Either.
+
 ## Objective
 
 Alice would like to exchange `x` TokenA for `y` LPT.
