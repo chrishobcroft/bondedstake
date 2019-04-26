@@ -26,6 +26,8 @@ Alice would like to exchange `x` TokenA for `y` LPT.
 
 ## Use Cases
 
+These scenarios describe the _only_ scenarios which should be possible using this system.
+
 ### Scenario 1
 
 1. Alice deposits `x` TokenA into the contract, specifying
