@@ -34,7 +34,7 @@ These scenarios describe the _only_ scenarios which should be possible using thi
 
 * `y` = the amount of LPT to be received in exchange for `x` TokenA
 * `z` = the amount of TokenB to be provided as security, and
-* `t` = the time when the offer expires
+* `t` = the block number by which Alice wants to receive the LPT
 
 2. Alice withdraws `x` TokenA.
 
@@ -44,12 +44,12 @@ These scenarios describe the _only_ scenarios which should be possible using thi
 
 * `y` = the amount of LPT to be received in exchange for `x` TokenA
 * `z` = the amount of TokenB to be provided as security, and
-* `t` = the time when the offer expires
+* `t` = the block number by which Alice wants to receive the LPT
 
 2. Bob deposits `z` TokenB.
 _Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
 
-3. Time `t` passes.
+3. Block `t` is mined.
 
 4. Alice withdraws `x` TokenA, and receives `z` TokenB
 
@@ -59,11 +59,11 @@ _Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
 
 * `y` = the amount of LPT to be received in exchange for `x` TokenA
 * `z` = the amount of TokenB to be provided as security, and
-* `t` = the time by which the LPT must be delivered.
+* `t` = the block number by which Alice wants to receive the LPT
 
 2. Bob deposits `z` TokenB.
 _Note: after this step, Alice cannot withdraw TokenA until time `t` has passed_
 
-3. Bob deposits `y` LPT _before_ time `t`, and receives `x` TokenA and `z` TokenB.
+3. Bob deposits `y` LPT _before_ block `t`, and receives `x` TokenA and `z` TokenB.
 
 4. Alice withdraws `y` LPT.
