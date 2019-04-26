@@ -16,9 +16,9 @@ Alice has TokenA.
 
 Bob has LPT, bonded to a node in Livepeer's network. Bob also has TokenB.
 
-TokenA and TokenB can be identical.
+TokenA can be Ether or an ERC-20 Token.
 
-Either of TokenA or TokenB can be Ether.
+TokenB can be Ether or an ERC-20 Token.
 
 ## Objective
 
